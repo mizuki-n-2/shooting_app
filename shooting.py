@@ -154,6 +154,11 @@ def stage(s):
 
 # ゲームの開始
 def start():
+  # 音楽再生(BGM)
+  sound = pyglet.resource.media('public/assets/sound/newsong.wav', streaming=False)
+
+  sound.play()
+
   # スコア表示
   score()
 
